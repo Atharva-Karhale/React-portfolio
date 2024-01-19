@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import './TechContent.css'
 
+
 export default function TechstackContent() {
     
     const [isHovered, setHovered] = useState(false);
@@ -43,7 +44,7 @@ export default function TechstackContent() {
                                 <div className=' h-6 my-auto max-w-[40%] bg-theme1-gray'></div>
                             </div>   
                             <div className='h-6 bg-theme1-orange my-auto mx-4 hover:text-theme1-white text-theme1-orange'>
-                                <div className='absolute mx-[19.4em] text-sm text-right font-abc font-bold '>20%</div>
+                                <div className='absolute mx-[19.4em] text-sm text-right font-abc font-bold '>80%</div>
                                 <div className=' h-6 my-auto max-w-[20%] bg-theme1-gray'></div>
                             </div>
                         </div>}
