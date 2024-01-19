@@ -26,8 +26,8 @@ export default function Navbar() {
             <div className={`flex relative size-full ${isHovered ? 'bg-theme1-gray ' : ''}`} onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
 
-                {isHovered && <img src='src/Assets/1x/Pattern.png' className='absolute inset-0 h-full w-full object-cover opacity-10'/>}
-                <img src='src/Assets/1x/Logo.png' className=' mx-auto h-12 py-1.5' alt='Atharva_Karhale-Wordmark'/>
+                {isHovered && <img src='/src/Assets/1x/Pattern.png' className='absolute inset-0 h-full w-full object-cover opacity-10'/>}
+                <img src='/src/Assets/1x/Logo.png' className=' mx-auto h-12 py-1.5' alt='Atharva_Karhale-Wordmark'/>
 
                 {isHovered && <div className='absolute z-10 gap-10 grid grid-cols-7 w-full text-center mt-2 font-abc font-bold '>
                         <div className=' col-start-2 bg-theme1-black text-theme1-white hover:text-theme1-orange hover:shadow-[0_0_15px] cursor-pointer hover:shadow-theme1-orange  m-auto p-1 mx-2 rounded'>
