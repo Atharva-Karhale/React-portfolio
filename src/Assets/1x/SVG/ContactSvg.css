@@ -1,0 +1,16 @@
+.hoverable-svg #linear-gradient stop {
+    transition: stop-color 0.3s ease;
+  }
+  
+  .hoverable-svg:hover #linear-gradient stop {
+    animation: gradientChange 0.3s forwards;
+  }
+
+
+  
+  @keyframes gradientChange {
+    to {
+      stop-color: #ff7517; /* Replace with the final color of the gradient */
+    }
+  }
+  

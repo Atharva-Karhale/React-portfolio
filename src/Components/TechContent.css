@@ -1,0 +1,11 @@
+@keyframes textLoop {
+    0% {color: #FF7517;}
+    25% {color: #3498db;}
+    50% {color: #2ecc71;}
+    75% {color: #e74c3c;}
+    100% {color: #ff7517;}
+}
+
+.animate-loop-text {
+    animation: textLoop 8s linear infinite;
+}

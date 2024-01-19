@@ -1,0 +1,34 @@
+/*background-color: #00d5d0;
+opacity: 0.8;
+background: repeating-linear-gradient( -45deg, #7d80bb, #7d80bb 7.5px, #00d5d0 7.5px, #00d5d0 37.5px );
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1080 270" style="enable-background:new 0 0 1080 270;" xml:space="preserve">
+
+     navbar
+     hero
+     h1 ("frontend")
+     s1 (Brain - Tech stack)
+     h2 (Projects)
+     s2 (Projects)
+     h3 (Journey)
+     s3 (Stick figure)
+     h4 (Contact)
+     s4 (Contact)
+     h5 (?)
+     s5 (wanna see more? - Hire me)
+
+     F3EFE0 white
+     434242 gray
+     222222 black
+     22A39F teal
+
+     ffffff white
+     6a6a6a gray
+     251f21 black
+     fe5001 orange
+
+     f6f4f4 white
+     3E3939 gray
+     2c2727 black
+     FF7517 orange
