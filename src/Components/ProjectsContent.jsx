@@ -26,7 +26,7 @@ export default function ProjectskContent() {
               
               <div className='absolute col-start-2 h-full w-6/12 box-border border-8 border-theme1-white'>
                 <div className=' absolute w-full h-full bg-gradient-to-b from-theme1-orange from-30% hover:bg-none z-10' ></div>
-                <img src='src/Assets/1x/tic tac toe.png' className=' object-cover h-full w-full object-top'/>
+                <img src='./Assets/1x/tic tac toe.png' className=' object-cover h-full w-full object-top'/>
               </div>
 
               <div className='absolute col-start-3 h-full w-full box-border border-8 border-theme1-white'>
