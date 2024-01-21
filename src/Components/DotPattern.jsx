@@ -36,7 +36,7 @@ export function Shape ({ text, svg, icon }) {
 //            
 //        </div>
 
-            <div className={` flex items-center justify-center bg-[url(${icon})] bg-center bg-contain bg-no-repeat size-14 bg-theme1-gray rounded-full ease-in-out duration-300 ${isHovered ? ' bg-theme1-black size-24' : ''}`}  onMouseEnter={mouseEntered} onMouseLeave={mouseLeft}>
+            <div className={` flex items-center justify-center bg-[url(src/Assets/1x/School.png)] bg-center bg-contain bg-no-repeat size-14 bg-theme1-gray rounded-full ease-in-out duration-300 ${isHovered ? ' bg-theme1-black size-24' : ''}`}  onMouseEnter={mouseEntered} onMouseLeave={mouseLeft}>
             
 
             {isHovered && (
@@ -58,7 +58,7 @@ const DotPattern = () => (
 
   <div className=' flex items-center'>
 
-    <Shape text='Lions International Academy' svg={School1} icon={'src/Assets/1x/School.png'}/>
+    <Shape text='Lions International Academy' svg={School1} icon={college}/>
     <div className=' w-28 h-[2px] bg-black mx-2'></div>
 
     <Shape text='Advait Vidyniketan' svg={School2} icon={college}/>
