@@ -24,14 +24,24 @@ export function Shape ({ text, svg, icon }) {
     return (
         <div className={` flex items-center justify-center size-14 bg-theme1-gray rounded-full ease-in-out duration-300 ${isHovered ? ' bg-theme1-black size-24' : ''}`}  onMouseEnter={mouseEntered}
     onMouseLeave={mouseLeft}>
-        <div className=' absolute text-white text-xl mx-[0.3em] my-[0.25em] z-10'>{icon}</div>
+        
 
-        {isHovered && (
+            {isHovered && (
             <div className=' flex flex-col items-center w-full '>
                 <img src={svg} className=' my-9 ' />
+                <div className='absolute mt-[11em] text-red-400  z-10'>{icon}</div>
                 <div className=' w-full font-def my-[6em] text-center text-sm font-bold text-theme1-gray'>{text}</div>
             </div>
-            
+
+            )}
+
+            {!isHovered && (
+            <div className=' flex flex-col items-center w-full '>
+                
+                <div className=' text-red-400 text-xl z-10'>{icon}</div>
+                
+            </div>
+
             )}
             
         </div>
