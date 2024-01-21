@@ -24,7 +24,12 @@ export default function JourneykContent() {
                 <div className=' row-span-1'>
                     {isHovered && <div className='underline underline-offset-2 text-theme1-gray'>Follow My Journey!</div>}
 
-                    {isHovered && <div className=' font-def text-center text-sm no-underline text-theme1-gray'> <span className=' text-theme1-orange'>Hover over</span> the icons below to <span className=' text-theme1-orange'>see my Journey</span>.</div>}
+                    {isHovered && <div>
+                    <div className=' hidden lg:block font-def text-center text-sm no-underline text-theme1-gray'> <span className=' text-theme1-orange'>Hover over</span> the icons below to <span className=' text-theme1-orange'>see my Journey</span>.</div>
+
+                    <div className=' lg:hidden block font-def text-center text-sm no-underline text-theme1-gray'> <span className=' text-theme1-orange'>Tap over</span> the icons below to <span className=' text-theme1-orange'>see my Journey</span>.</div>
+                    </div>
+                    }
                     
                     
                 </div>
@@ -34,7 +39,7 @@ export default function JourneykContent() {
             </div>
 
             {isHovered && <div className=' row-span-1
-             flex justify-center items-center bg-gradient-to-t from-white'>
+             flex justify-center items-center bg-gradient-to-t from-white overflow-x-scroll lg:overflow-hidden'>
                 <DotPattern/>  
             </div>}
         </div>
