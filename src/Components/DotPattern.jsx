@@ -61,16 +61,16 @@ const DotPattern = () => (
     <Shape text='Lions International Academy' svg={School1} icon={'src/Assets/1x/School.png'}/>
     <div className=' w-28 h-[2px] bg-black mx-2'></div>
 
-    <Shape text='Advait Vidyniketan' svg={School2} icon={'src/Assets/1x/college.png'}/>
+    <Shape text='Advait Vidyniketan' svg={School2} icon={college}/>
     <div className=' w-28 h-[2px] bg-black mx-2'></div>
 
-    <Shape text='IITRAM Ahmedabad' svg={School3} icon={'src/Assets/1x/degree.png'}/>
+    <Shape text='IITRAM Ahmedabad' svg={School3} icon={<GiGraduateCap className='size-6' />}/>
     <div className=' w-28 h-[2px] bg-black mx-2'></div>
     
-    <Shape text='Self Learning & Pw Skills' svg={College} icon={'src/Assets/1x/learning.png'}/>
+    <Shape text='Self Learning & Pw Skills' svg={College} icon={<FaLaptopCode className=' size-6' />}/>
     <div className=' w-28 h-[2px] bg-black mx-2'></div>
 
-    <Shape text='{INSERT YOUR COMPANY NAME}' svg={Job} icon={'src/Assets/1x/job.png'}/>
+    <Shape text='{INSERT YOUR COMPANY NAME}' svg={Job} icon={<FaMoneyCheckAlt className=' size-6' />}/>
 
   </div>
 );
