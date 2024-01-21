@@ -17,39 +17,51 @@ export default function ProjectskContent() {
     };
 
     return (
-        <div className={` relative grid grid-cols-[1fr_1fr_1fr] grid-rows-[1fr_1fr_1fr] font-abc font-bold text-4xl h-full text-theme1-gray ${isHovered ? ' text-white ' : ''}`} onMouseEnter={mouseEntered}
+        <div className={` overflow-hidden text-xl grid grid-rows-3 size-full lg:relative lg:grid lg:grid-cols-[1fr_1fr_1fr] lg:grid-rows-[1fr_1fr_1fr] font-abc font-bold lg:text-4xl lg:h-full text-theme1-gray ${isHovered ? ' text-white ' : ''}`} onMouseEnter={mouseEntered}
         onMouseLeave={mouseLeft}>
 
             {isHovered && (
             <>
-              <div className='absolute col-start-1 h-full w-1/3 box-border border-8 border-theme1-white'>
-                <div className=' absolute w-full h-full bg-gradient-to-b from-theme1-gray from-20% hover:bg-none z-10'></div>
-                <img src={passwordGenerator} className=' object-cover h-full w-full object-top'/>
+              <div className='relative row-span-1 overflow-hidden lg:absolute lg:col-start-1 lg:h-full lg:w-1/3 lg:box-border lg:border-8 lg:border-theme1-white border-8 group'>
+
+                <div className=' lg:hidden absolute bottom-6 right-2 text-2xl hover:underline hover:decoration-theme1-orange hover:cursor-pointer z-20 group-hover:text-theme1-white group-hover:underline group-hover:decoration-theme1-orange'><a href='https://passwordgeneratorak.netlify.app/'>Password<br/>Generator</a></div>
+                <div className=' lg:hidden absolute text-[7em] bottom-12 right-[0.05em] lg:text-[#000000] opacity-25 z-10 '>1</div>
+
+                <div className=' absolute w-full h-full bg-gradient-to-b from-theme1-gray from-20% hover:bg-none '></div>
+                <img src={passwordGenerator} className=' lg:object-cover lg:h-full lg:w-full lg:object-top'/>
               </div>
               
-              <div className='absolute col-start-2 h-full w-6/12 box-border border-8 border-theme1-white'>
-                <div className=' absolute w-full h-full bg-gradient-to-b from-theme1-orange from-30% hover:bg-none z-10' ></div>
-                <img src={ticTacToe} className=' object-cover h-full w-full object-top'/>
+              <div className='relative row-span-1 overflow-hidden  lg:absolute lg:col-start-2 lg:h-full lg:w-6/12 lg:box-border lg:border-8 lg:border-theme1-white border-8 group'>
+
+                <div className=' lg:hidden absolute bottom-6 right-2 text-2xl hover:underline hover:decoration-theme1-orange hover:cursor-pointer z-20 group-hover:text-theme1-black group-hover:underline group-hover:decoration-theme1-orange'><a href='https://tic-tac-toe-tic.netlify.app/'>Tic Tac Toe</a></div>
+                <div className=' lg:hidden absolute text-[7em] bottom-12 right-[0.05em] lg:text-[#000000] opacity-25 z-10 '>2</div>
+
+                <div className=' absolute w-full h-full bg-gradient-to-b from-theme1-orange from-30% hover:bg-none ' ></div>
+                <img src={ticTacToe} className=' lg:object-cover lg:h-full lg:w-full lg:object-top'/>
               </div>
 
-              <div className='absolute col-start-3 h-full w-full box-border border-8 border-theme1-white'>
-                <div className=' absolute w-full h-full bg-gradient-to-b from-theme1-gray from-20% hover:bg-none z-10'></div>
-                <img src={router} className=' object-cover h-full w-full object-top'/>
+              <div className='relative row-span-1 overflow-hidden lg:absolute lg:col-start-3 lg:h-full lg:w-full lg:box-border lg:border-8 lg:border-theme1-white border-8 group'>
+
+                <div className=' lg:hidden absolute bottom-6 right-2 text-2xl hover:underline hover:decoration-theme1-orange hover:cursor-pointer z-20 group-hover:text-theme1-black group-hover:underline group-hover:decoration-theme1-orange'><a href='https://router-projectak.netlify.app/'>Router Project</a></div>
+                <div className=' lg:hidden absolute text-[7em] bottom-12 right-[0.05em] lg:text-[#000000] opacity-25 z-10 '>3</div>
+
+                <div className='absolute w-full h-full bg-gradient-to-b from-theme1-gray from-20% hover:bg-none'></div>
+                <img src={router} className=' lg:object-cover lg:h-full lg:w-full lg:object-top'/>
               </div>
             </>
             )}
 
-            <div className='relative row-start-3 m-3 text-right z-10'>
-            <div className=' text-5xl hover:underline hover:decoration-theme1-orange hover:cursor-pointer z-20'><a href='https://passwordgeneratorak.netlify.app/'>Password Generator</a></div>
-            <div className=' text-[7em] absolute top-0 right-[0.05em] text-[#000000] opacity-15 -z-10'>1</div>
+            <div className='hidden lg:block lg:relative lg:row-start-3 lg:m-3 lg:text-right lg:z-10'>
+              <div className=' lg:text-5xl lg:hover:underline lg:hover:decoration-theme1-orange lg:hover:cursor-pointer lg:z-20'><a href='https://passwordgeneratorak.netlify.app/'>Password Generator</a></div>
+              <div className=' lg:text-[7em] lg:absolute lg:top-0 lg:right-[0.05em] lg:text-[#000000] lg:opacity-15 lg:-z-10'>1</div>
             </div>
-            <div className='relative row-start-3 m-3 text-right z-10'>
-            <div className=' text-5xl hover:underline hover:decoration-theme1-gray hover:cursor-pointer z-20'><a href='https://tic-tac-toe-tic.netlify.app/'>Tic Tac Toe </a></div>
-            <div className=' text-[7em] absolute top-0 right-[0.05em] text-[#000000] opacity-15 -z-10'>2</div>
+            <div className=' hidden lg:block lg:relative lg:row-start-3 lg:m-3 lg:text-right lg:z-10'>
+              <div className=' lg:text-5xl lg:hover:underline lg:hover:decoration-theme1-gray lg:hover:cursor-pointer lg:z-20'><a href='https://tic-tac-toe-tic.netlify.app/'>Tic Tac Toe </a></div>
+              <div className=' lg:text-[7em] lg:absolute lg:top-0 lg:right-[0.05em] lg:text-[#000000] lg:opacity-15 lg:-z-10'>2</div>
             </div>
-            <div className='relative row-start-3 m-3 text-right z-10'>
-            <div className=' text-5xl hover:underline hover:decoration-theme1-orange hover:cursor-pointer z-20'><a href='https://router-projectak.netlify.app/'>Router Project </a></div>
-            <div className=' text-[7em] absolute top-2 right-[0.05em] text-[#000000] opacity-15 -z-10'>3</div>
+            <div className=' hidden lg:block lg:relative lg:row-start-3 lg:m-3 lg:text-right lg:z-10'>
+              <div className=' lg:text-5xl lg:hover:underline lg:hover:decoration-theme1-orange lg:hover:cursor-pointer lg:z-20'><a href='https://router-projectak.netlify.app/'>Router Project </a></div>
+              <div className=' lg:text-[7em] lg:absolute lg:top-2 lg:right-[0.05em] lg:text-[#000000] lg:opacity-15 lg:-z-10'>3</div>
             </div>
             
         </div>

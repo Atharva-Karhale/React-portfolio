@@ -16,10 +16,10 @@ export default function TechstackContent() {
     };
 
     return (
-        <div className={`grid grid-cols-[1fr_1fr] font-abc font-bold text-4xl h-full text-[#333333] ${isHovered ? '' : ''}`} onMouseEnter={mouseEntered}
+        <div className={`lg:grid grid-cols-[1fr_1fr] font-abc font-bold text-4xl h-full text-[#333333] ${isHovered ? '' : ''}`} onMouseEnter={mouseEntered}
         onMouseLeave={mouseLeft}>
 
-            <div className={` ${isHovered ? ' border-r-4 border-theme1-gray bg-[url(/src/Assets/1x/brain.png)] bg-center bg-contain bg-no-repeat' : ''}` }>
+            <div className={` ${isHovered ? ' hidden lg:block border-r-4 border-theme1-gray bg-[url(/src/Assets/1x/brain.png)] bg-center bg-contain bg-no-repeat' : ''}` }>
      
             </div>
             
@@ -30,7 +30,7 @@ export default function TechstackContent() {
 
                     <div className={` py-2 px-6 text-4xl underline underline-offset-2 ${isHovered ? " bg-theme1-gray text-theme1-white " : ""}`}>Skill level</div>
                     <div className='grid grid-cols-2 text-m font-medium  '>
-                        {isHovered && <div className='  col-start-1 grid grid-rows-4'>
+                        {isHovered && <div className='hidden col-start-1 lg:grid lg:grid-rows-4'>
                             <div className=' h-6 bg-theme1-orange my-auto mx-4 hover:text-theme1-white text-theme1-orange'>
                                 <div className='absolute mx-[19.4em] text-sm text-right font-abc font-bold '>90%</div>
                                 <div className=' h-6 my-auto max-w-[10%] bg-theme1-gray'></div>
@@ -50,7 +50,7 @@ export default function TechstackContent() {
                         </div>}
 
 
-                        <ul className={`text-right col-start-2 grid grid-rows-4 h-full mx-6 text-[0.8em] font-medium `}>
+                        <ul className={`text-right col-start-2 grid grid-rows-4 h-full lg:mx-6 text-lg lg:text-[0.8em] font-medium`}>
 
                             <li className={` group: hover:bg-theme1-gray hover:text-white p-2 my-auto ${isHovered ? 'text-left' : 'text-right'}`}>
                                 Ui/Ux

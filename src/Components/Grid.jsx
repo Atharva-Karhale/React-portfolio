@@ -36,7 +36,7 @@ export default function Grid() {
     return(
 
         <div>
-            <div className=' bg-theme1-white grid grid-rows-[3.2em_34.5em_3.5em_34em_4em_38em_4em_28em_4em_30em_2.8em] grid-cols-[50px_auto_50px] h-auto'>
+            <div className=' bg-theme1-white grid grid-rows-[3.2em_34.5em_3.5em_34em_4em_38em_4em_28em_4em_30em_2.8em] grid-cols-[1px_auto_1px] lg:grid-cols-[50px_auto_50px] h-auto'>
 
                 <div className=' col-span-3 row-span-1 z-10 '>
                     <div className=' border-2 border-theme1-black'></div>
@@ -54,10 +54,10 @@ export default function Grid() {
                     </div>
                 </div>
 
-                <div className={` ${isHovered? " col-span-1 row-span-1 border-2 border-theme1-black grid grid-cols-[3fr_4fr] grid-rows-5 relative overflow-hidden": "grid grid-cols-[3fr_4fr] grid-rows-5 relative overflow-hidden border-2 border-theme1-black"}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >
+                <div className={` ${isHovered? " col-span-1 row-span-1 border-2 border-theme1-black grid grid-rows-[2fr_1fr_1fr] lg:grid lg:grid-cols-[3fr_4fr] lg:grid-rows-5 relative overflow-hidden": "grid grid-rows-3 lg:grid lg:grid-cols-[3fr_4fr] lg:grid-rows-5 relative overflow-hidden border-2 border-theme1-black"}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >
 
                     {isHovered && 
-                    <div className=' col-span-1 row-span-3 border-r-4 border-theme1-gray relative overflow-hidden font-abc font-semibold text-theme1-black'>
+                    <div className='col-span-1 row-span-3 border-r-4 border-theme1-gray relative overflow-hidden font-abc font-semibold text-theme1-black hidden lg:block '>
                         <span className=' top-[0.17em] absolute text-[18em] -rotate-[113deg] -left-2'>A</span>
                         <span className=' -top-[0.44em] absolute text-[18em] rotate-[85deg] left-[0.08em]'>S</span>
                         <span className=' -top-[0.06em] absolute text-[18em] -rotate-[135deg] left-[1.26em]'>K</span>
@@ -66,26 +66,26 @@ export default function Grid() {
                     </div>}
 
                     {isHovered &&
-                    <div className='col-span-1 row-span-2 border-b-4 border-theme1-gray grid grid-cols-2 overflow-hidden'>
-                        <div className='relative -top-20 p-2 text-[14em] mx-auto text-theme1-black'>IIIIII</div>
+                    <div className='col-span-1 row-span-2 border-b-4 border-theme1-gray lg:grid lg:grid-cols-2 overflow-hidden hidden  '>
+                        <div className='relative col-span-1 text-center -top-20 lg:p-2  text-[14em] mx-auto  text-theme1-black '>IIIII</div>
                         <Link to="contact" spy={true} smooth={true} offset={-80}>
-                        <div className=' bg-theme1-black hover:cursor-pointer  '> <FaAngleDown className='text-theme1-white text-[18em] mx-auto -my-8 hover:text-theme1-orange'/></div> </Link>
+                        <div className=' bg-theme1-black hover:cursor-pointer  '> <FaAngleDown className='text-theme1-white text-[8em] lg:text-[18em] mx-auto -my-8 hover:text-theme1-orange'/></div> </Link>
 
                     </div>}
 
                     {isHovered &&
-                    <div className='border-b-4 border-theme1-gray col-span-1 row-span-2 text-theme1-black text-[9em] font-def font-black text-center'>
+                    <div className='border-b-4 border-theme1-gray col-span-1 row-span-2 text-theme1-black lg:text-[9em] text-[6em] my-auto font-def font-black text-center hidden lg:block '>
                         Hi.
                     </div>}
 
                     {isHovered &&
-                    <div className=' col-span-1 row-span-2  font-abc font-bold text-4xl text-theme1-black flex flex-col text-end border-r-4 p-4 border-t-4 border-theme1-gray'>
+                    <div className='row-start-2 my-auto lg:m-0 lg:col-span-1 lg:row-span-2  font-abc font-bold text-4xl text-center md:text-4xl text-theme1-black flex flex-col lg:text-end lg:border-r-4 lg:p-4 lg:border-t-4 border-theme1-gray'>
                         <div className='underline underline-offset-8 hover:text-theme1-orange'>Atharva Karhale</div>
                         <div className='text-[0.44em] font-medium'>Frontend Developer | Graphic Dsigner</div>
                     </div>}
 
                     {!isHovered && 
-                    <div className=' row-start-4 col-span-1 row-span-2  font-abc font-bold text-4xl text-theme1-black flex flex-col text-end border-r-4 p-4 border-t-4 border-theme1-white'>
+                    <div className=' row-start-2 my-auto lg:m-0 text-center lg:row-start-4 lg:col-span-1 lg:row-span-2  font-abc font-bold text-4xl md:text-4xl text-theme1-black flex flex-col lg:text-end lg:border-r-4 lg:p-4 lg:border-t-4 border-theme1-white'>
                     <div className='underline underline-offset-8 hover:text-theme1-orange'>Atharva Karhale</div>
                     <div className='text-[0.44em] font-medium'>Frontend Developer | Graphic Dsigner</div>
                     </div>
@@ -93,7 +93,7 @@ export default function Grid() {
                     
 
                     {isHovered &&
-                    <div className=' col-span-1 row-span-1'>
+                    <div className=' row-start-3 lg:col-span-1 lg:row-span-1  '>
                         <ul className=' flex text-4xl justify-between py-7 px-20 '>
                             <li title='Github' className='hover:text-theme1-orange hover:cursor-pointer rounded-full border-4 border-theme1-black p-2 border-opacity-25 hover:border-theme1-orange '><a href='https://github.com/Atharva-Karhale'><FaGithub className='text-theme1-gray' /></a></li>
                             <li title='LinkedIn' className='hover:text-theme1-orange hover:cursor-pointer rounded-full border-4 border-theme1-black p-2 border-opacity-25 hover:border-theme1-orange'><a href='https://www.linkedin.com/in/atharva-karhale/'><FaLinkedin className='text-theme1-gray' /></a></li>
