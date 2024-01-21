@@ -47,7 +47,7 @@ export default function Grid() {
                 
 
                 <div className=" col-span-1 row-span-1 border-2 border-theme1-black text-[#cdcdcd]  hover:text-theme1-orange hover:bg-theme1-black " >
-                    <div className= ' -rotate-90 flex items-center h-full font-abc text-xl mt-24 '>
+                    <div className= 'hidden -rotate-90 flex items-center h-full font-abc lg:text-xl lg:mt-24 '>
 
                         <div><FaMousePointer /></div>
                         <div>_Hover_Anywhere!</div>

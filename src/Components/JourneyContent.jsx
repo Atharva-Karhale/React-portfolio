@@ -34,7 +34,7 @@ export default function JourneykContent() {
             </div>
 
             {isHovered && <div className=' row-span-1
-             flex justify-center items-center bg-gradient-to-t from-white'>
+             flex justify-center items-center bg-gradient-to-t overflow-x-scroll from-white'>
                 <DotPattern/>   
             </div>}
         </div>
