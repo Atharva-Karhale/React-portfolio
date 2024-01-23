@@ -36,7 +36,7 @@ export default function Grid() {
     return(
 
         <div>
-            <div className=' bg-theme1-white grid grid-rows-[3.2em_34.5em_3.5em_34em_4em_38em_4em_28em_4em_30em_2.8em] grid-cols-[1px_auto_1px] lg:grid-cols-[50px_auto_50px] h-auto'>
+            <div className=' bg-theme1-white grid grid-rows-[3.2em_34.5em_3.5em_34em_4em_38em_4em_28em_4em_54em_2.8em] lg:grid-rows-[3.2em_34.5em_3.5em_34em_4em_38em_4em_28em_4em_30em_2.8em] grid-cols-[1px_auto_1px] lg:grid-cols-[50px_auto_50px] h-auto'>
 
                 <div className=' col-span-3 row-span-1 z-10 '>
                     <div className=' border-2 border-theme1-black'></div>
@@ -160,7 +160,9 @@ export default function Grid() {
 
                 
                 <div className=" col-span-1 row-span-1 border-2 border-theme1-black"></div>
-                <div className='col-span-1 row-span-1 border-2 border-theme1-black' id='contact'> <ContactContent/></div>
+                <div className='col-span-1 row-span-1 border-2 border-theme1-black' id='contact'
+                style={{ height: '100%' }}
+                > <ContactContent/></div>
                 <div className="col-span-1 row-span-1 border-2 border-theme1-black"></div>
 
                 <div className=" col-span-1 row-span-1 border-2 border-theme1-black"></div>
