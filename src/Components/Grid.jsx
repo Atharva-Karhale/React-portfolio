@@ -98,7 +98,7 @@ export default function Grid() {
                         <span className=' -top-[0.13em] absolute text-[16em] -rotate-[199deg] left-[0.88em]'>__</span>
                         <span className=' top-[1.15em] absolute text-[16em] left-[1.88em] text-theme1-orange'>
                         <Link to="contact" spy={true} smooth={true} offset={-80}>
-                        <div className=' bg-theme1-orange rounded-full hover:cursor-pointer  '> <FaAngleDown className='text-theme1-white text-[0.2em] mx-auto -my-8 hover:text-theme1-orange'/></div> </Link></span>
+                        <div className=' bg-theme1-orange rounded-full hover:cursor-pointer  '> <FaAngleDown className='text-theme1-white text-[0.2em] mx-auto -my-8 '/></div> </Link></span>
                     </div>
                     </div>}
 
