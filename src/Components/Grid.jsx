@@ -84,6 +84,28 @@ export default function Grid() {
                         <div className='text-[0.44em] font-medium'>Frontend Developer | Graphic Dsigner</div>
                     </div>}
 
+                    <div className=' row-start-1 text-center font-normal text-[0.7em] lg:hidden font-abc m-2 flex flex-col'>
+
+                    <div >
+                    <span className=' font-bold'>Unlock surprises:</span><span className='text-theme1-orange pl-1 font-bold underline underline-offset-2'>Tap around to reveal</span> hidden gems on the page!
+                    </div>
+
+                    {isHovered && <div className=' relative m-2 mt-4 font-abc font-semibold text-theme1-black h-full'>
+                    <div className=' size-full border-[8px] border-opacity-50 border-theme1-gray'>
+                        <span className=' top-[0.17em] absolute text-[16em] -rotate-[113deg] -left-2'>A</span>
+                        <span className=' -top-[0.44em] absolute text-[16em] rotate-[85deg] left-[0.08em]'>S</span>
+                        <span className=' -top-[0.06em] absolute text-[16em] -rotate-[135deg] left-[1.26em]'>K</span>
+                        <span className=' -top-[0.13em] absolute text-[16em] -rotate-[199deg] left-[0.88em]'>__</span>
+                        <span className=' top-[1.15em] absolute text-[16em] left-[1.88em] text-theme1-orange'>
+                        <Link to="contact" spy={true} smooth={true} offset={-80}>
+                        <div className=' bg-theme1-orange rounded-full hover:cursor-pointer  '> <FaAngleDown className='text-theme1-white text-[0.2em] mx-auto -my-8 hover:text-theme1-orange'/></div> </Link></span>
+                    </div>
+                    </div>}
+
+                    </div>
+
+
+
                     {!isHovered && 
                     <div className=' row-start-2 my-auto lg:m-0 text-center lg:row-start-4 lg:col-span-1 lg:row-span-2  font-abc font-bold text-4xl md:text-4xl text-theme1-black flex flex-col lg:text-end lg:border-r-4 lg:p-4 lg:border-t-4 border-theme1-white'>
                     <div className='underline underline-offset-8 hover:text-theme1-orange'>Atharva Karhale</div>
@@ -94,6 +116,7 @@ export default function Grid() {
 
                     {isHovered &&
                     <div className=' row-start-3 lg:col-span-1 lg:row-span-1  '>
+                        <div className=' opacity-70 text-theme1-orange absolute top-[29em] right-[11em] text-center font-bold lg:hidden block font-abc text-sm'> - SOCIALS - </div>
                         <ul className=' flex text-4xl justify-between py-7 px-20 '>
                             <li title='Github' className='hover:text-theme1-orange hover:cursor-pointer rounded-full border-4 border-theme1-black p-2 border-opacity-25 hover:border-theme1-orange '><a href='https://github.com/Atharva-Karhale'><FaGithub className='text-theme1-gray' /></a></li>
                             <li title='LinkedIn' className='hover:text-theme1-orange hover:cursor-pointer rounded-full border-4 border-theme1-black p-2 border-opacity-25 hover:border-theme1-orange'><a href='https://www.linkedin.com/in/atharva-karhale/'><FaLinkedin className='text-theme1-gray' /></a></li>
