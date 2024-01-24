@@ -81,7 +81,7 @@ export default function Grid() {
                     {isHovered &&
                     <div className='row-start-2 my-auto lg:m-0 lg:col-span-1 lg:row-span-2  font-abc font-bold text-4xl text-center md:text-4xl text-theme1-black flex flex-col lg:text-end lg:border-r-4 lg:p-4 lg:border-t-4 border-theme1-gray'>
                         <div className='underline underline-offset-8 hover:text-theme1-orange'>Atharva Karhale</div>
-                        <div className='text-[0.44em] font-medium'>Frontend Developer | Graphic Dsigner</div>
+                        <div className='text-[0.44em] font-medium'>Frontend Developer | Graphic Designer</div>
                     </div>}
 
                     <div className=' row-start-1 text-center font-normal text-[0.7em] lg:hidden font-abc m-2 flex flex-col'>
