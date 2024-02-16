@@ -28,41 +28,40 @@ export default function TechstackContent() {
 
                 <div className={` hover:text-center grid grid-rows-[1fr_5fr]  ${isHovered ? 'text-center tracking-widest' : 'text-right'}`}>
 
-                    <div className={` py-2 px-6 text-4xl underline underline-offset-2 ${isHovered ? " bg-theme1-gray text-theme1-white " : ""}`}>Skill level</div>
-                    <div className='grid grid-cols-2 text-m font-medium  '>
+                    <div className={` py-2 px-6 text-4xl underline underline-offset-2 ${isHovered ? " bg-theme1-gray text-theme1-white " : ""}`}>Technologies</div>
+                    <div className='lg:grid lg:grid-cols-2 text-m font-medium  '>
                         {isHovered && <div className='hidden col-start-1 lg:grid lg:grid-rows-4'>
                             <div className=' h-6 bg-theme1-orange my-auto mx-4 hover:text-theme1-white text-theme1-orange'>
                                 <div className='absolute mx-[19.4em] text-sm text-right font-abc font-bold '>90%</div>
                                 <div className=' h-6 my-auto max-w-[10%] bg-theme1-gray'></div>
                             </div>    
                             <div className='h-6 bg-theme1-orange my-auto mx-4 hover:text-theme1-white text-theme1-orange'>
-                                <div className='absolute mx-[19.4em] text-sm text-right font-abc font-bold '>80%</div>
-                                <div className=' h-6 my-auto max-w-[20%] bg-theme1-gray'></div>
-                            </div>   
-                            <div className='h-6 bg-theme1-orange my-auto mx-4 hover:text-theme1-white text-theme1-orange'>
                                 <div className='absolute mx-[19.4em] text-sm text-right font-abc font-bold '>60%</div>
                                 <div className=' h-6 my-auto max-w-[40%] bg-theme1-gray'></div>
                             </div>   
                             <div className='h-6 bg-theme1-orange my-auto mx-4 hover:text-theme1-white text-theme1-orange'>
-                                <div className='absolute mx-[19.4em] text-sm text-right font-abc font-bold '>80%</div>
-                                <div className=' h-6 my-auto max-w-[20%] bg-theme1-gray'></div>
+                                <div className='absolute mx-[19.4em] text-sm text-right font-abc font-bold '>50%</div>
+                                <div className=' h-6 my-auto max-w-[50%] bg-theme1-gray'></div>
+                            </div>   
+                            <div className='h-6 bg-theme1-orange my-auto mx-4 hover:text-theme1-white text-theme1-orange'>
+                                <div className='absolute mx-[19.4em] text-sm text-right font-abc font-bold '>70%</div>
+                                <div className=' h-6 my-auto max-w-[30%] bg-theme1-gray'></div>
                             </div>
                         </div>}
 
 
-                        <ul className={`text-right col-start-2 grid grid-rows-4 h-full lg:mx-6 text-lg lg:text-[0.8em] font-medium`}>
-
+                        <ul className={`flex flex-col ml-20 md:ml-0 items-end ${isHovered ? 'bg-[url(/src/Assets/1x/brain.png)] bg bg-contain bg-no-repeat font-extrabold lg:font-normal text-transparent md:text-black' : ' '}  lg:bg-none md:bg-none text-xs lg:text-right col-start-2 lg:grid grid-rows-4 h-full lg:mx-6 lg:text-lg lg:text-[0.6em] font-medium`}>
                             <li className={` group: hover:bg-theme1-gray hover:text-white p-2 my-auto ${isHovered ? 'text-left' : 'text-right'}`}>
-                                Ui/Ux
+                                React+Tailwind
                             </li>
                             <li className={`hover:bg-theme1-gray hover:text-white p-2 my-auto ${isHovered ? 'text-left' : 'text-right'}`}>
-                                HTML/CSS
+                                Redux Toolkit
                             </li>
                             <li className={`hover:bg-theme1-gray hover:text-white p-2 my-auto ${isHovered ? 'text-left' : 'text-right'}`}>
-                                JavaScript
+                                JavaScript+NodeJS
                             </li>
                             <li className={`hover:bg-theme1-gray hover:text-white p-2 my-auto ${isHovered ? 'text-left' : 'text-right'}`}>
-                                React/Tailwind
+                                MongoDB+Express
                             </li>
                         </ul>
                     </div>

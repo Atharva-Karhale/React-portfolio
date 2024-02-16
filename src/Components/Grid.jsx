@@ -86,11 +86,12 @@ export default function Grid() {
 
                     <div className=' row-start-1 text-center font-normal text-[0.7em] lg:hidden font-abc m-2 flex flex-col'>
 
-                    <div >
-                    <span className=' font-bold'>Unlock surprises:</span><span className='text-theme1-orange pl-1 font-bold underline underline-offset-2'>Tap around to reveal</span> hidden gems on the page!
-                    </div>
+                    {!isHovered &&
+                    <div className=' text-lg'>
+                    <span className=' font-bold'>Unlock surprises:</span><br/><span className='text-theme1-orange pl-1 font-bold underline underline-offset-2 text-2xl'>Tap around to reveal</span><br/>hidden gems on the page!
+                    </div>}
 
-                    {isHovered && <div className=' relative m-2 mt-4 font-abc font-semibold text-theme1-black h-full'>
+                    {isHovered && <div className=' relative m-2 mt-8 font-abc font-semibold text-theme1-black h-full'>
                     <div className=' size-full border-[8px] border-opacity-50 border-theme1-gray'>
                         <span className=' top-[0.17em] absolute text-[16em] -rotate-[113deg] -left-2'>A</span>
                         <span className=' -top-[0.44em] absolute text-[16em] rotate-[85deg] left-[0.08em]'>S</span>
