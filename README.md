@@ -1,4 +1,4 @@
-# Personal Portfolio Website 🎵🎧 (no ads lol)
+# Personal Portfolio Website 📟📱
 
 Completely custom made personal portfolio website made from scratch using React and Tailwind Css.
 
